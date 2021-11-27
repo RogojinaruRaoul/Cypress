@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-11-27T13:48:46.421Z",
-    "end": "2021-11-27T13:48:54.632Z",
-    "duration": 8211,
+    "start": "2021-11-27T18:39:00.183Z",
+    "end": "2021-11-27T18:39:08.805Z",
+    "duration": 8622,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5153613f-2ca3-46cb-af00-c9d3b24e5a30",
+      "uuid": "54967980-a376-41d5-a522-72947a474f9f",
       "title": "",
       "fullFile": "cypress/integration/DemoTest/Test2.js",
       "file": "cypress/integration/DemoTest/Test2.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c41ee868-7e93-4c9a-83cf-54e82c58f6cf",
+          "uuid": "ccb2decd-6bc9-4aac-a21e-960d56a30123",
           "title": "My TestSuite-3",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "TestCase-1",
               "fullTitle": "My TestSuite-3 TestCase-1",
               "timedOut": null,
-              "duration": 6106,
+              "duration": 7163,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(Cypress.env(\"url\") + \"/AutomationPractice/\");\ncy.get(\"#checkBoxOption1\").check().should(\"be.checked\", true).and(\"have.value\", \"option1\"); //Check boxes\ncy.get(\"#checkBoxOption1\").uncheck().should(\"not.be.checked\");\ncy.get(\"input[type='checkbox']\").check([\"option2\", \"option3\"]); // cy.contains(\"#checkbox-example\").each(($el, index, $list) => {\n//   cy.contains(\"#checkBoxOption\").check();\n// });\n// Static dropdowns\ncy.get(\"select#dropdown-class-example\").select(\"option3\").should(\"have.value\", \"option3\"); //Dynamic dropdowns\n// cy.get(\"#autocomplete\").type(\"ind\").contains(\"India\");",
               "err": {},
-              "uuid": "b504aebe-76fc-428d-bb32-cb52402fe8de",
-              "parentUUID": "c41ee868-7e93-4c9a-83cf-54e82c58f6cf",
+              "uuid": "92687b38-05bf-467d-af25-76c3ac4cb19f",
+              "parentUUID": "ccb2decd-6bc9-4aac-a21e-960d56a30123",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b504aebe-76fc-428d-bb32-cb52402fe8de"
+            "92687b38-05bf-467d-af25-76c3ac4cb19f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6106,
+          "duration": 7163,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

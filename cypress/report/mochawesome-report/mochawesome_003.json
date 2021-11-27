@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-11-27T13:47:26.673Z",
-    "end": "2021-11-27T13:47:31.455Z",
-    "duration": 4782,
+    "start": "2021-11-27T18:37:42.975Z",
+    "end": "2021-11-27T18:37:48.020Z",
+    "duration": 5045,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "0d50eb0f-ff93-47bc-ae84-1399d7e95e68",
+      "uuid": "02274869-cb5f-4e2d-8b10-9937ed6904f3",
       "title": "",
       "fullFile": "cypress/integration/DemoTest/CypressHooks.js",
       "file": "cypress/integration/DemoTest/CypressHooks.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "115f5f7d-6ecf-484e-9649-a0791afd1eb6",
+          "uuid": "e7da0df8-4e15-4ab3-84b9-6c9aa029cb18",
           "title": "My TestSuite",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "My 1'st test",
               "fullTitle": "My TestSuite My 1'st test",
               "timedOut": null,
-              "duration": 3512,
+              "duration": 3779,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const homePage = new _HomePage.default();\nhomePage.getNameBox().type(this.data.name);\nhomePage.getGender().select(this.data.gender);\nhomePage.getTwoWayDataBinding().should(\"have.value\", this.data.name);\nhomePage.getNameBox().should(\"have.attr\", \"minlength\", \"2\");\nhomePage.getEnterpreneaurRadioButton().should(\"not.be.checked\");\nhomePage.getEnterpreneaurRadioButton().should(\"be.disabled\");\nhomePage.getShopTab().click();",
+              "code": "var homePage = new _HomePage[\"default\"]();\nhomePage.getNameBox().type(this.data.name);\nhomePage.getGender().select(this.data.gender);\nhomePage.getTwoWayDataBinding().should(\"have.value\", this.data.name);\nhomePage.getNameBox().should(\"have.attr\", \"minlength\", \"2\");\nhomePage.getEnterpreneaurRadioButton().should(\"not.be.checked\");\nhomePage.getEnterpreneaurRadioButton().should(\"be.disabled\");\nhomePage.getShopTab().click();",
               "err": {},
-              "uuid": "ba6f17a5-7697-458a-a102-d27f232b7f18",
-              "parentUUID": "115f5f7d-6ecf-484e-9649-a0791afd1eb6",
+              "uuid": "d5b7afb8-b08d-4c80-95ab-10712f8eccc0",
+              "parentUUID": "e7da0df8-4e15-4ab3-84b9-6c9aa029cb18",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ba6f17a5-7697-458a-a102-d27f232b7f18"
+            "d5b7afb8-b08d-4c80-95ab-10712f8eccc0"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3512,
+          "duration": 3779,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-11-27T13:47:58.614Z",
-    "end": "2021-11-27T13:48:06.304Z",
-    "duration": 7690,
+    "start": "2021-11-27T18:38:14.879Z",
+    "end": "2021-11-27T18:38:22.562Z",
+    "duration": 7683,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7085f130-492b-4aab-b6cb-2ba8a2b09137",
+      "uuid": "665d30b1-4c7e-46eb-9408-182949ea8403",
       "title": "",
       "fullFile": "cypress/integration/DemoTest/Navigate-GreenKartPage.js",
       "file": "cypress/integration/DemoTest/Navigate-GreenKartPage.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "acdf3ee8-4ed5-40c4-985b-5f0162c257c2",
+          "uuid": "7fab8f3c-cc0c-4880-9131-6f52d02cb646",
           "title": "My second TestSuite",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "TestCase-1",
               "fullTitle": "My second TestSuite TestCase-1",
               "timedOut": null,
-              "duration": 6361,
+              "duration": 6412,
               "state": "passed",
               "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit(\"https://rahulshettyacademy.com/seleniumPractise/#/\");\ncy.get(\".search-keyword\").type(\"ca\");\ncy.wait(2000);\ncy.get(\".products\").as(\"products\");\ncy.get(\"@products\").find(\".product\").eq(1).contains(\"ADD TO CART\").click();\ncy.get(\"@products\").find(\".product\").each(($el, index, $list) => {\n  const textVeg = $el.find(\"h4.product-name\").text();\n  if (textVeg.includes(\"Cashews\")) {\n    cy.wrap($el).find(\"button\").click();\n  }\n});\ncy.get(\".cart-icon > img\").click();\ncy.get(\"button[type='button']\").contains(\"PROCEED TO CHECKOUT\").click();\ncy.contains(\"Place Order\").click(); // cy.get(\":nth-child(14)\").click();",
+              "code": "cy.visit(\"https://rahulshettyacademy.com/seleniumPractise/#/\");\ncy.get(\".search-keyword\").type(\"ca\");\ncy.wait(2000);\ncy.get(\".products\").as(\"products\");\ncy.get(\"@products\").find(\".product\").eq(1).contains(\"ADD TO CART\").click();\ncy.get(\"@products\").find(\".product\").each(function ($el, index, $list) {\n  var textVeg = $el.find(\"h4.product-name\").text();\n  if (textVeg.includes(\"Cashews\")) {\n    cy.wrap($el).find(\"button\").click();\n  }\n});\ncy.get(\".cart-icon > img\").click();\ncy.get(\"button[type='button']\").contains(\"PROCEED TO CHECKOUT\").click();\ncy.contains(\"Place Order\").click(); // cy.get(\":nth-child(14)\").click();",
               "err": {},
-              "uuid": "6117c3b1-b7f5-4da9-af6a-4ef8ac955759",
-              "parentUUID": "acdf3ee8-4ed5-40c4-985b-5f0162c257c2",
+              "uuid": "e3afeaea-61e9-4f87-81cb-5c722bff62df",
+              "parentUUID": "7fab8f3c-cc0c-4880-9131-6f52d02cb646",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "6117c3b1-b7f5-4da9-af6a-4ef8ac955759"
+            "e3afeaea-61e9-4f87-81cb-5c722bff62df"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6361,
+          "duration": 6412,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

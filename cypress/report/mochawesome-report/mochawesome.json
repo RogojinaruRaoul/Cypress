@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-11-27T13:46:33.748Z",
-    "end": "2021-11-27T13:46:46.335Z",
-    "duration": 12587,
+    "start": "2021-11-27T18:36:51.759Z",
+    "end": "2021-11-27T18:37:05.318Z",
+    "duration": 13559,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "cdb3e52c-5c2a-441a-bf3e-1da743666b25",
+      "uuid": "4e72c6af-6af9-4a7f-835d-58e2d669dd24",
       "title": "",
       "fullFile": "cypress/integration/DemoTest/AddToShop.js",
       "file": "cypress/integration/DemoTest/AddToShop.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "24ee75f4-aa9e-4021-bc6f-b70bd8999a66",
+          "uuid": "e84d41a9-ae93-47b9-94cd-171769c4e4b4",
           "title": "My TestSuite",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "My 1'st test",
               "fullTitle": "My TestSuite My 1'st test",
               "timedOut": null,
-              "duration": 10165,
+              "duration": 10146,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "// this.data.product;\nCypress.config(\"pageLoadTimeout\", 8000);\nconst shop = new _Shop.default();\nthis.data.product.forEach(function (element) {\n  cy.selectTel(element);\n});\nshop.getCheckOut().click(); //How to check the total price of the products\nvar sum = 0;\ncy.get(\"td:nth-child(4) strong\").each(el => {\n  //   split string by white space \" \"\n  const splitRes = el.text().split(\" \"); //   delete spaces before and after the element of index 1\n  var price = splitRes[1].trim();\n  sum = Number(sum) + Number(price);\n}).then(function () {\n  // we use .then because JS is asyncronous and we need to wait for the promise to be resolved\n  cy.log(sum);\n});\ncy.get(\"h3:nth-child(1) strong\").then(function (element) {\n  var total = element.text().split(\" \");\n  var price = total[1].trim();\n  expect(sum).to.equal(Number(price));\n}); // cy.pause();\nshop.getCheckOut2().click();\nshop.getCountry().type(\"India\");\ncy.get(\".suggestions > ul > li > a\").click();\ncy.get(\"#checkbox2\").click({\n  force: true\n});\ncy.get(\"input[type='submit']\").click();\ncy.get(\".alert\").then(function (el) {\n  const element = el.text();\n  expect(element.includes(\"Success! Thank you! Your order will be delivered in next few weeks :-).\")).to.be.true;\n}); //   .each((el, index, list) => {\n//     if (el.text() === \"India\") {\n//       cy.wrap(el).click();\n//     }\n//   });",
+              "code": "// this.data.product;\nCypress.config(\"pageLoadTimeout\", 8000);\nvar shop = new _Shop[\"default\"]();\nthis.data.product.forEach(function (element) {\n  cy.selectTel(element);\n});\nshop.getCheckOut().click(); //How to check the total price of the products\nvar sum = 0;\ncy.get(\"td:nth-child(4) strong\").each(function (el) {\n  //   split string by white space \" \"\n  var splitRes = el.text().split(\" \"); //   delete spaces before and after the element of index 1\n  var price = splitRes[1].trim();\n  sum = Number(sum) + Number(price);\n}).then(function () {\n  // we use .then because JS is asyncronous and we need to wait for the promise to be resolved\n  cy.log(sum);\n});\ncy.get(\"h3:nth-child(1) strong\").then(function (element) {\n  var total = element.text().split(\" \");\n  var price = total[1].trim();\n  expect(sum).to.equal(Number(price));\n}); // cy.pause();\nshop.getCheckOut2().click();\nshop.getCountry().type(\"India\");\ncy.get(\".suggestions > ul > li > a\").click();\ncy.get(\"#checkbox2\").click({\n  force: true\n});\ncy.get(\"input[type='submit']\").click();\ncy.get(\".alert\").then(function (el) {\n  var element = el.text();\n  expect(element.includes(\"Success! Thank you! Your order will be delivered in next few weeks :-).\")).to.be[\"true\"];\n}); //   .each((el, index, list) => {\n//     if (el.text() === \"India\") {\n//       cy.wrap(el).click();\n//     }\n//   });",
               "err": {},
-              "uuid": "627b994e-f730-406e-b208-303ba99d5411",
-              "parentUUID": "24ee75f4-aa9e-4021-bc6f-b70bd8999a66",
+              "uuid": "0925ae1d-80a9-431a-ab89-da40b010a857",
+              "parentUUID": "e84d41a9-ae93-47b9-94cd-171769c4e4b4",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "627b994e-f730-406e-b208-303ba99d5411"
+            "0925ae1d-80a9-431a-ab89-da40b010a857"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 10165,
+          "duration": 10146,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-11-27T13:47:05.479Z",
-    "end": "2021-11-27T13:47:22.398Z",
-    "duration": 16919,
+    "start": "2021-11-27T18:37:23.917Z",
+    "end": "2021-11-27T18:37:38.998Z",
+    "duration": 15081,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "87006e81-f190-48b2-9623-d0bd67801083",
+      "uuid": "98608649-94e5-45ae-8567-d32ce0bf5909",
       "title": "",
       "fullFile": "cypress/integration/DemoTest/AutomationPractice-2-Alerts.js",
       "file": "cypress/integration/DemoTest/AutomationPractice-2-Alerts.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "a529f195-7d56-4fe7-a06b-9e81618a97b0",
+          "uuid": "ed61aa51-b8dd-4668-8ba7-2352897812a8",
           "title": "My TestSuite-3",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "TestCase-1",
               "fullTitle": "My TestSuite-3 TestCase-1",
               "timedOut": null,
-              "duration": 14725,
+              "duration": 12802,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit(Cypress.env(\"url\") + \"/AutomationPractice/\");\ncy.get(\"#alertbtn\").click(); //Cypress auto accepts alerts and pop-ups\n//window:alert- API\ncy.on(\"window:alert\", str => {\n  //mocha\n  expect(str).to.equal(\"Hello , share this practice page and share your knowledge\");\n});\ncy.get(\"input[value='Confirm']\").click(); //window:confirm- API\ncy.on(\"window:confirm\", confirm => {\n  expect(confirm).to.equal(\"Hello , Are you sure you want to confirm?\");\n});\ncy.get(\"#opentab\").invoke(\"removeAttr\", \"target\").click(); //  navigation back/forward, previous/next.\ncy.url().should(\"include\", \"rahulshettyacademy.com\");\ncy.go(\"back\");\ncy.url().should(\"include\", \"rahulshettyacademy.com/AutomationPractice/\");\ncy.go(\"forward\");\ncy.url().should(\"include\", \"rahulshettyacademy.com\");\ncy.go(\"back\");\ncy.url().should(\"include\", \"rahulshettyacademy.com/AutomationPractice/\");",
+              "code": "cy.visit(Cypress.env(\"url\") + \"/AutomationPractice/\");\ncy.get(\"#alertbtn\").click(); //Cypress auto accepts alerts and pop-ups\n//window:alert- API\ncy.on(\"window:alert\", function (str) {\n  //mocha\n  expect(str).to.equal(\"Hello , share this practice page and share your knowledge\");\n});\ncy.get(\"input[value='Confirm']\").click(); //window:confirm- API\ncy.on(\"window:confirm\", function (confirm) {\n  expect(confirm).to.equal(\"Hello , Are you sure you want to confirm?\");\n});\ncy.get(\"#opentab\").invoke(\"removeAttr\", \"target\").click(); //  navigation back/forward, previous/next.\ncy.url().should(\"include\", \"rahulshettyacademy.com\");\ncy.go(\"back\");\ncy.url().should(\"include\", \"rahulshettyacademy.com/AutomationPractice/\");\ncy.go(\"forward\");\ncy.url().should(\"include\", \"rahulshettyacademy.com\");\ncy.go(\"back\");\ncy.url().should(\"include\", \"rahulshettyacademy.com/AutomationPractice/\");",
               "err": {},
-              "uuid": "9aceb960-85ca-4e17-ad27-9d98cf2a23a6",
-              "parentUUID": "a529f195-7d56-4fe7-a06b-9e81618a97b0",
+              "uuid": "4c80a5e5-6c35-4cb2-ad25-7fe715901118",
+              "parentUUID": "ed61aa51-b8dd-4668-8ba7-2352897812a8",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9aceb960-85ca-4e17-ad27-9d98cf2a23a6"
+            "4c80a5e5-6c35-4cb2-ad25-7fe715901118"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 14725,
+          "duration": 12802,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

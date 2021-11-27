@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-11-27T13:47:35.048Z",
-    "end": "2021-11-27T13:47:43.312Z",
-    "duration": 8264,
+    "start": "2021-11-27T18:37:51.614Z",
+    "end": "2021-11-27T18:38:00.132Z",
+    "duration": 8518,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e6b22a16-bcc7-472c-8539-1beee2a7d18d",
+      "uuid": "bcecddcd-2e4d-4a9d-96bd-d8e674e9b6dc",
       "title": "",
       "fullFile": "cypress/integration/DemoTest/HandlingFrames.js",
       "file": "cypress/integration/DemoTest/HandlingFrames.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2c45fbae-e774-49f8-9aec-baa363e53700",
+          "uuid": "94f8090e-2d87-4c02-8f45-b971b71f1c33",
           "title": "MouseHover TestSuite",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Testcase-1",
               "fullTitle": "MouseHover TestSuite Testcase-1",
               "timedOut": null,
-              "duration": 6767,
+              "duration": 7030,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(Cypress.env(\"url\") + \"/AutomationPractice/\");\ncy.frameLoaded(\"#courses-iframe\");\ncy.iframe().find(\"a[href*='mentorship']\").eq(0).click();\ncy.iframe().find('h1[class*=\"pricing-title\"]').should(\"have.length\", 2);",
               "err": {},
-              "uuid": "98b92ccc-c4ac-4af5-a06f-e1aea40ca7a9",
-              "parentUUID": "2c45fbae-e774-49f8-9aec-baa363e53700",
+              "uuid": "96606161-9b06-4a56-a380-771272915f9a",
+              "parentUUID": "94f8090e-2d87-4c02-8f45-b971b71f1c33",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "98b92ccc-c4ac-4af5-a06f-e1aea40ca7a9"
+            "96606161-9b06-4a56-a380-771272915f9a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6767,
+          "duration": 7030,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

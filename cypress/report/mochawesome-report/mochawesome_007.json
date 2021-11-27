@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-11-27T13:48:09.952Z",
-    "end": "2021-11-27T13:48:19.457Z",
-    "duration": 9505,
+    "start": "2021-11-27T18:38:26.038Z",
+    "end": "2021-11-27T18:38:36.045Z",
+    "duration": 10007,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "1723906b-842a-4a9d-bdf2-822d76a584f9",
+      "uuid": "81824ef8-b072-4d02-a80b-19f67a9c6e4c",
       "title": "",
       "fullFile": "cypress/integration/DemoTest/OpenWindow.js",
       "file": "cypress/integration/DemoTest/OpenWindow.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ae6a5232-3f8c-4500-8866-b0d6990b7340",
+          "uuid": "39f91525-5866-404a-a936-556955280140",
           "title": "MouseHover TestSuite",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Testcase-1",
               "fullTitle": "MouseHover TestSuite Testcase-1",
               "timedOut": null,
-              "duration": 7605,
+              "duration": 8211,
               "state": "passed",
               "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit(Cypress.env(\"url\") + \"/AutomationPractice/\"); //   Get the value of an property\ncy.get(\"#opentab\").then(function (el) {\n  const url = el.prop(\"href\");\n  cy.visit(url);\n}); // cy.get(\"#openwindow\").invoke(\"removeAttr\", \"onclick\").click();",
+              "code": "cy.visit(Cypress.env(\"url\") + \"/AutomationPractice/\"); //   Get the value of an property\ncy.get(\"#opentab\").then(function (el) {\n  var url = el.prop(\"href\");\n  cy.visit(url);\n}); // cy.get(\"#openwindow\").invoke(\"removeAttr\", \"onclick\").click();",
               "err": {},
-              "uuid": "baab3c9d-8fe0-46c2-bd42-c085ee37e5c7",
-              "parentUUID": "ae6a5232-3f8c-4500-8866-b0d6990b7340",
+              "uuid": "67b03d0a-febb-41e8-8a9d-66f2796b3e93",
+              "parentUUID": "39f91525-5866-404a-a936-556955280140",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "baab3c9d-8fe0-46c2-bd42-c085ee37e5c7"
+            "67b03d0a-febb-41e8-8a9d-66f2796b3e93"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7605,
+          "duration": 8211,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

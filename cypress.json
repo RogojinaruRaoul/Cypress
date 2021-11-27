@@ -2,8 +2,11 @@
   "viewportHeight": 660,
   "viewportWidth": 1200,
   "defaultCommandTimeout": 8000,
+
   "projectId": "8573zk",
+
   "env": { "url": "https://rahulshettyacademy.com" },
+
   "reporter": "mochawesome",
   "reporterOptions": {
     "charts": true,
@@ -12,6 +15,8 @@
     "json": true,
     "reportDir": "cypress/report/mochawesome-report"
   },
+
+  "testFiles": "feature",
 
   "retries": {
     "runMode": 1

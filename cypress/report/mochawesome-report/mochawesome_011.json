@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-11-27T13:48:58.361Z",
-    "end": "2021-11-27T13:49:08.822Z",
-    "duration": 10461,
+    "start": "2021-11-27T18:39:12.391Z",
+    "end": "2021-11-27T18:39:20.391Z",
+    "duration": 8000,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8df33756-0e88-439e-83f5-010266d2724e",
+      "uuid": "ea806e3c-fa4a-446d-a894-50f3ab3feab6",
       "title": "",
       "fullFile": "cypress/integration/DemoTest/WebTables.js",
       "file": "cypress/integration/DemoTest/WebTables.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "16c7cf04-2778-4cd1-9096-1ac7e6420780",
+          "uuid": "7bcc78ba-7e9e-4a0d-8864-fb0cb7ebd10f",
           "title": "My Table TestSuite",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "TestCase-1",
               "fullTitle": "My Table TestSuite TestCase-1",
               "timedOut": null,
-              "duration": 8541,
+              "duration": 6844,
               "state": "passed",
               "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit(Cypress.env(\"url\") + \"/AutomationPractice/\");\ncy.get(\".table-display td:nth-child(2)\").each(($el, index, $list) => {\n  const columnCourse = $el.text();\n  if (columnCourse.includes(\"Python\")) {\n    cy.get(\".table-display td:nth-child(2)\").eq(index).next().then(function (price) {\n      const priceText = price.text();\n      expect(priceText).to.equal(\"25\");\n    });\n  }\n});",
+              "code": "cy.visit(Cypress.env(\"url\") + \"/AutomationPractice/\");\ncy.get(\".table-display td:nth-child(2)\").each(function ($el, index, $list) {\n  var columnCourse = $el.text();\n  if (columnCourse.includes(\"Python\")) {\n    cy.get(\".table-display td:nth-child(2)\").eq(index).next().then(function (price) {\n      var priceText = price.text();\n      expect(priceText).to.equal(\"25\");\n    });\n  }\n});",
               "err": {},
-              "uuid": "6d656f0a-edab-4185-b135-5545150d8852",
-              "parentUUID": "16c7cf04-2778-4cd1-9096-1ac7e6420780",
+              "uuid": "a78b7ab9-ab99-456e-8250-9d2d77e41394",
+              "parentUUID": "7bcc78ba-7e9e-4a0d-8864-fb0cb7ebd10f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "6d656f0a-edab-4185-b135-5545150d8852"
+            "a78b7ab9-ab99-456e-8250-9d2d77e41394"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8541,
+          "duration": 6844,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

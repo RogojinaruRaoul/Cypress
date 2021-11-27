@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-11-27T13:48:23.652Z",
-    "end": "2021-11-27T13:48:31.322Z",
-    "duration": 7670,
+    "start": "2021-11-27T18:38:39.966Z",
+    "end": "2021-11-27T18:38:47.069Z",
+    "duration": 7103,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "37eb8b7c-1353-4f89-a3ce-3193336d83c8",
+      "uuid": "a22d7731-2d8c-4672-942f-1ab3fdd876b1",
       "title": "",
       "fullFile": "cypress/integration/DemoTest/test.js",
       "file": "cypress/integration/DemoTest/test.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e117a738-ac4f-4491-ad8c-3c1028fcf599",
+          "uuid": "cb608045-e0a9-4546-8534-6bbd81aa2c3b",
           "title": "My first test suite",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "My fist test case",
               "fullTitle": "My first test suite My fist test case",
               "timedOut": null,
-              "duration": 5690,
+              "duration": 5516,
               "state": "passed",
               "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit(Cypress.env(\"url\") + \"/seleniumPractise/#/\");\ncy.get(\".search-keyword\").type(\"ca\");\ncy.wait(2000);\ncy.get(\".product:visible\").should(\"have.length\", 4); //parent-child chain\ncy.get(\".products\").find(\".product\").should(\"have.length\", 4);\ncy.get(\".products\").find(\".product\").should(\"have.length\", 4);\ncy.get(\".products\").find(\".product\").eq(1).contains(\"ADD TO CART\").click();\ncy.get(\".products\").find(\".product\").each(($el, index, $list) => {\n  const textVeg = $el.find(\"h4.product.name\").text();\n  if (textVeg.includes(\"Cashews\")) {\n    cy.wrap($el).find(\"button\").click();\n  }\n});",
+              "code": "cy.visit(Cypress.env(\"url\") + \"/seleniumPractise/#/\");\ncy.get(\".search-keyword\").type(\"ca\");\ncy.wait(2000);\ncy.get(\".product:visible\").should(\"have.length\", 4); //parent-child chain\ncy.get(\".products\").find(\".product\").should(\"have.length\", 4);\ncy.get(\".products\").find(\".product\").should(\"have.length\", 4);\ncy.get(\".products\").find(\".product\").eq(1).contains(\"ADD TO CART\").click();\ncy.get(\".products\").find(\".product\").each(function ($el, index, $list) {\n  var textVeg = $el.find(\"h4.product.name\").text();\n  if (textVeg.includes(\"Cashews\")) {\n    cy.wrap($el).find(\"button\").click();\n  }\n});",
               "err": {},
-              "uuid": "17ffb6ee-1914-475a-8e15-abd63e56dbbc",
-              "parentUUID": "e117a738-ac4f-4491-ad8c-3c1028fcf599",
+              "uuid": "4ac2c658-3dff-428e-9da3-24ce3e0d6513",
+              "parentUUID": "cb608045-e0a9-4546-8534-6bbd81aa2c3b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "17ffb6ee-1914-475a-8e15-abd63e56dbbc"
+            "4ac2c658-3dff-428e-9da3-24ce3e0d6513"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5690,
+          "duration": 5516,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

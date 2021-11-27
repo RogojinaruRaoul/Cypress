@@ -15,6 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/RogojinaruRaoul/Cypress.git"
   },
+
   "author": "Raoul",
   "license": "ISC",
   "bugs": {
@@ -23,9 +24,14 @@
   "homepage": "https://github.com/RogojinaruRaoul/Cypress#readme",
   "devDependencies": {
     "cypress": "^9.1.0",
+    "cypress-cucumber-preprocessor": "^4.3.0",
     "cypress-iframe": "^1.0.1",
     "mochawesome": "^7.0.1",
     "mochawesome-merge": "^4.2.0"
   },
-  "description": ""
+  "description": "",
+
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
 }

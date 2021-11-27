@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-11-27T13:47:46.889Z",
-    "end": "2021-11-27T13:47:54.706Z",
-    "duration": 7817,
+    "start": "2021-11-27T18:38:03.699Z",
+    "end": "2021-11-27T18:38:11.137Z",
+    "duration": 7438,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "bd03b1e2-6018-4f79-9849-54097288b16f",
+      "uuid": "64fdbfb9-4865-4b05-85df-411c334476df",
       "title": "",
       "fullFile": "cypress/integration/DemoTest/MouseHover.js",
       "file": "cypress/integration/DemoTest/MouseHover.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0d0d9bdb-808e-4b31-993a-e93d2751461e",
+          "uuid": "c6f58638-f1eb-41ee-b621-086752b3157e",
           "title": "MouseHover TestSuite",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Testcase-1",
               "fullTitle": "MouseHover TestSuite Testcase-1",
               "timedOut": null,
-              "duration": 6015,
+              "duration": 5640,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(Cypress.env(\"url\") + \"/AutomationPractice/\"); // cy.get(\".mouse-hover-content\").invoke(\"show\");\ncy.contains(\"Top\").click({\n  force: true\n});\ncy.url().should(\"include\", \"top\");",
               "err": {},
-              "uuid": "44949b07-6aeb-460a-ab66-52c83d430e0c",
-              "parentUUID": "0d0d9bdb-808e-4b31-993a-e93d2751461e",
+              "uuid": "5e313f66-673d-49f8-89d5-9321a4a1ceb2",
+              "parentUUID": "c6f58638-f1eb-41ee-b621-086752b3157e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "44949b07-6aeb-460a-ab66-52c83d430e0c"
+            "5e313f66-673d-49f8-89d5-9321a4a1ceb2"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6015,
+          "duration": 5640,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

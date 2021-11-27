@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-11-27T13:46:50.532Z",
-    "end": "2021-11-27T13:47:01.335Z",
-    "duration": 10803,
+    "start": "2021-11-27T18:37:09.194Z",
+    "end": "2021-11-27T18:37:19.573Z",
+    "duration": 10379,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "54f9d3c3-ea19-4de7-a022-08d1436e2271",
+      "uuid": "a2375779-55f6-431b-bf7d-15ffd332d47d",
       "title": "",
       "fullFile": "cypress/integration/DemoTest/AutomationPractice-1.js",
       "file": "cypress/integration/DemoTest/AutomationPractice-1.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "646da61a-963e-45b8-a841-f029a472971c",
+          "uuid": "dad58fe9-c331-4cd8-ba4e-f5ba856d540c",
           "title": "My TestSuite-3",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "TestCase-1",
               "fullTitle": "My TestSuite-3 TestCase-1",
               "timedOut": null,
-              "duration": 8988,
+              "duration": 8566,
               "state": "passed",
               "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit(Cypress.env(\"url\") + \"/AutomationPractice/\");\ncy.get(\"#checkBoxOption1\").check().should(\"be.checked\", true).and(\"have.value\", \"option1\"); //Check boxes\ncy.get(\"#checkBoxOption1\").uncheck().should(\"not.be.checked\");\ncy.get(\"input[type='checkbox']\").check([\"option2\", \"option3\"]); // Static dropdowns\ncy.get(\"select#dropdown-class-example\").select(\"option3\").should(\"have.value\", \"option3\"); //Dynamic dropdowns\ncy.get(\"#autocomplete\").type(\"ind\");\ncy.get(\".ui-menu-item div\").each(($el, index, $list) => {\n  if ($el.text() === \"India\") {\n    cy.wrap($el).click();\n  }\n}); //autocomplete\ncy.get(\"#autocomplete\").should(\"have.value\", \"India\"); //visible-not.visible\ncy.get(\"#hide-textbox\").click();\ncy.get(\"#displayed-text\").should(\"be.hidden\")\n/*or .should(\"not.be.visible\");*/\n;\ncy.get(\"#show-textbox\").click();\ncy.get(\"#displayed-text\").should(\"be.visible\");\ncy.get(\"#displayed-text\").type(\"muhahahahahaha\"); //check radio\ncy.get(\"input[name='radioButton']\").check([\"radio1\", \"radio3\"]).should(\"be.checked\")\n/*-only one radio button can be selected*/\n;",
+              "code": "cy.visit(Cypress.env(\"url\") + \"/AutomationPractice/\");\ncy.get(\"#checkBoxOption1\").check().should(\"be.checked\", true).and(\"have.value\", \"option1\"); //Check boxes\ncy.get(\"#checkBoxOption1\").uncheck().should(\"not.be.checked\");\ncy.get(\"input[type='checkbox']\").check([\"option2\", \"option3\"]); // Static dropdowns\ncy.get(\"select#dropdown-class-example\").select(\"option3\").should(\"have.value\", \"option3\"); //Dynamic dropdowns\ncy.get(\"#autocomplete\").type(\"ind\");\ncy.get(\".ui-menu-item div\").each(function ($el, index, $list) {\n  if ($el.text() === \"India\") {\n    cy.wrap($el).click();\n  }\n}); //autocomplete\ncy.get(\"#autocomplete\").should(\"have.value\", \"India\"); //visible-not.visible\ncy.get(\"#hide-textbox\").click();\ncy.get(\"#displayed-text\").should(\"be.hidden\")\n/*or .should(\"not.be.visible\");*/\n;\ncy.get(\"#show-textbox\").click();\ncy.get(\"#displayed-text\").should(\"be.visible\");\ncy.get(\"#displayed-text\").type(\"muhahahahahaha\"); //check radio\ncy.get(\"input[name='radioButton']\").check([\"radio1\", \"radio3\"]).should(\"be.checked\")\n/*-only one radio button can be selected*/\n;",
               "err": {},
-              "uuid": "300993ac-b922-41a2-aac1-01ad153204f4",
-              "parentUUID": "646da61a-963e-45b8-a841-f029a472971c",
+              "uuid": "c197164c-eed2-429d-be37-831cd12d3dd8",
+              "parentUUID": "dad58fe9-c331-4cd8-ba4e-f5ba856d540c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "300993ac-b922-41a2-aac1-01ad153204f4"
+            "c197164c-eed2-429d-be37-831cd12d3dd8"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8988,
+          "duration": 8566,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
