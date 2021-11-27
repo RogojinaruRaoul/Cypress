@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-27T13:47:46.889Z",
+    "end": "2021-11-27T13:47:54.706Z",
+    "duration": 7817,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bd03b1e2-6018-4f79-9849-54097288b16f",
+      "title": "",
+      "fullFile": "cypress/integration/DemoTest/MouseHover.js",
+      "file": "cypress/integration/DemoTest/MouseHover.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0d0d9bdb-808e-4b31-993a-e93d2751461e",
+          "title": "MouseHover TestSuite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Testcase-1",
+              "fullTitle": "MouseHover TestSuite Testcase-1",
+              "timedOut": null,
+              "duration": 6015,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env(\"url\") + \"/AutomationPractice/\"); // cy.get(\".mouse-hover-content\").invoke(\"show\");\ncy.contains(\"Top\").click({\n  force: true\n});\ncy.url().should(\"include\", \"top\");",
+              "err": {},
+              "uuid": "44949b07-6aeb-460a-ab66-52c83d430e0c",
+              "parentUUID": "0d0d9bdb-808e-4b31-993a-e93d2751461e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "44949b07-6aeb-460a-ab66-52c83d430e0c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6015,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.0.1"
+    }
+  }
+}

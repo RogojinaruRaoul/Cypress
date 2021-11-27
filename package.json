@@ -1,7 +1,6 @@
 {
   "name": "workspace",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "cypress run --reporter mochawesome",
@@ -10,7 +9,7 @@
     "dashboardTest": "npm cypress run -- --record --key fe9ce71f-93a9-4609-a16c-7ef605586d07 --reporter mochawesome",
     "demoTest": "npm run test -- --spec 'cypress/integration/DemoTest/*' ",
     "merge-reports": "mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json",
-    "generateHMTL": "marge cypress/report/output.json --reportDir ./ --inline"
+    "generateHTML": "marge cypress/report/output.json --reportDir ./ --inline"
   },
   "repository": {
     "type": "git",
@@ -25,6 +24,8 @@
   "devDependencies": {
     "cypress": "^9.1.0",
     "cypress-iframe": "^1.0.1",
-    "mochawesome": "^7.0.1"
-  }
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.0"
+  },
+  "description": ""
 }

@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-27T14:04:42.282Z",
+    "end": "2021-11-27T14:04:50.227Z",
+    "duration": 7945,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "25fcce54-2815-47bb-9ecf-e940750d0616",
+      "title": "",
+      "fullFile": "cypress/integration/DemoTest/Navigate-GreenKartPage.js",
+      "file": "cypress/integration/DemoTest/Navigate-GreenKartPage.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "00e8d1c5-89c7-42c2-842a-3a68bf7e9cee",
+          "title": "My second TestSuite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TestCase-1",
+              "fullTitle": "My second TestSuite TestCase-1",
+              "timedOut": null,
+              "duration": 6664,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://rahulshettyacademy.com/seleniumPractise/#/\");\ncy.get(\".search-keyword\").type(\"ca\");\ncy.wait(2000);\ncy.get(\".products\").as(\"products\");\ncy.get(\"@products\").find(\".product\").eq(1).contains(\"ADD TO CART\").click();\ncy.get(\"@products\").find(\".product\").each(($el, index, $list) => {\n  const textVeg = $el.find(\"h4.product-name\").text();\n  if (textVeg.includes(\"Cashews\")) {\n    cy.wrap($el).find(\"button\").click();\n  }\n});\ncy.get(\".cart-icon > img\").click();\ncy.get(\"button[type='button']\").contains(\"PROCEED TO CHECKOUT\").click();\ncy.contains(\"Place Order\").click(); // cy.get(\":nth-child(14)\").click();",
+              "err": {},
+              "uuid": "23da8ce8-9a62-4655-8594-4ecc70bc7215",
+              "parentUUID": "00e8d1c5-89c7-42c2-842a-3a68bf7e9cee",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "23da8ce8-9a62-4655-8594-4ecc70bc7215"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6664,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.0.1"
+    }
+  }
+}
