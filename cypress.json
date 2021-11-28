@@ -16,7 +16,7 @@
     "reportDir": "cypress/report/mochawesome-report"
   },
 
-  "testFiles": "feature",
+ "testFiles": "**/*.**",
 
   "retries": {
     "runMode": 1
