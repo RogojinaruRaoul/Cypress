@@ -26,4 +26,5 @@ describe("My TestSuite", function () {
 
     homePage.getShopTab().click();
   });
+
 });

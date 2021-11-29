@@ -1,13 +1,16 @@
 import {Given,When,Then} from "cypress-cucumber-preprocessor/steps";
 import Shop from "../../../support/PageObjects/Shop";
+import HomePage from "../../../support/PageObjects/HomePage";
 const shop = new Shop();
-
+const homePage = new HomePage();
+let name;
 Given("I open E-commerce page",()=>
 {cy.visit(Cypress.env("url") + "/angularpractice/")
-shop.getShopTab().click();
+
 });
 
 When("I add items to cart",function(){
+    shop.getShopTab().click();
     this.data.product.forEach(function (element) {
         cy.selectTel(element);
     });
@@ -56,4 +59,30 @@ Then("Select the country, submit and verify Thank you message",()=>{
         ).to.be.true;
     });
 
+})
+
+When("I fill the form details",function(dataTable){
+    //Using fixtures
+    // homePage.getNameBox().type(this.data.name);
+    //
+    // homePage.getGender().select(this.data.gender);
+//    Using dataTable from .feature file
+//    When you call rawTable[1]-> you will have an array of [Miruna, Female]
+    name= dataTable.rawTable[1][0];
+    homePage.getNameBox().type(name);
+    homePage.getGender().select(dataTable.rawTable[1][1]);
+})
+
+And("Validate the form's behavior",function(){
+    homePage.getTwoWayDataBinding().should("have.value",name);
+
+    homePage.getNameBox().should("have.attr", "minlength", "2");
+
+    homePage.getEnterpreneaurRadioButton().should("not.be.checked");
+    homePage.getEnterpreneaurRadioButton().should("be.disabled");
+
+})
+
+Then("Select the Shop page",()=>{
+    homePage.getShopTab().click();
 })

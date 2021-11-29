@@ -6,7 +6,7 @@
     "test": "cypress run --reporter mochawesome",
     "headTest": "npm run test -- --headed",
     "chromeTest": "npm run test -- --browser chrome --headed",
-    "dashboardTest": "npm cypress run -- --record --key fe9ce71f-93a9-4609-a16c-7ef605586d07 --reporter mochawesome",
+    "dashboardTest": "node_modules\\.bin\\cypress run --record --key 105e8f62-6a83-44e1-999a-984eb686a493 --reporter mochawesome",
     "demoTest": "npm run test -- --spec 'cypress/integration/DemoTest/*' ",
     "merge-reports": "mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json",
     "generateHTML": "marge cypress/report/output.json --reportDir ./ --inline"
