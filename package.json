@@ -15,7 +15,6 @@
     "type": "git",
     "url": "git+https://github.com/RogojinaruRaoul/Cypress.git"
   },
-
   "author": "Raoul",
   "license": "ISC",
   "bugs": {
@@ -27,11 +26,17 @@
     "cypress-cucumber-preprocessor": "^4.3.0",
     "cypress-iframe": "^1.0.1",
     "mochawesome": "^7.0.1",
-    "mochawesome-merge": "^4.2.0"
+    "mochawesome-merge": "^4.2.0",
+    "multiple-cucumber-html-reporter": "^1.18.3"
   },
   "description": "",
-
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   }
 }
